@@ -9,7 +9,7 @@
     color: rgb(51, 51, 51);
 }
 
-/*Container principal*/
+/*Container formulario*/
 #container{
     text-align: center;
     align-items: center;
@@ -49,6 +49,10 @@
     cursor: pointer;
     background-color: rgb(51, 233, 111);
     transition: .3s;
+}
+
+#qtdCadastros{
+    color:  rgb(38, 98, 230);
 }
 
 /*Tabela*/

@@ -255,6 +255,14 @@ let bancoDeCadastros = [
   }
 ]
 
+let contagemCadastros = ()=>{
+  
+  let infoQtd = document.querySelector("#qtdCadastros")
+  let quantidadeCadastros = document.querySelectorAll(".registro").length
+
+  infoQtd.innerHTML = `Quantidade de registros: ${quantidadeCadastros}`
+}
+
 let permitirEdicaoDados = ()=>{
   
   let dadosCadastrados = document.querySelectorAll(".dPessoa")
@@ -276,6 +284,7 @@ let eventoBotaoExcluir = ()=>{
       let idLinha = botao.getAttribute('data-id')
       document.getElementById(`${idLinha}`).remove()
 
+      contagemCadastros()
     })
   })
 }
@@ -284,7 +293,7 @@ let renderizarCadastros = banco =>{
     
   for (let i=0; i<bancoDeCadastros.length; i++){    
       
-      let novaTabela = `<tr id="${banco[i].id}">  
+      let novaTabela = `<tr class="registro" id="${banco[i].id}">  
                           <td>${banco[i].id}</td>
                           <td class="dPessoa">${banco[i].nome}</td>
                           <td class="dPessoa">${banco[i].cpf}</td>
@@ -369,7 +378,7 @@ botaoInserirPessoa.addEventListener("click", ()=>{
 
   else{
     
-    let novaTabela = `<tr id="${id}">  
+    let novaTabela = `<tr class="registro" id="${id}">  
                         <td>${id}</td>
                         <td class="dPessoa">${nome}</td>
                         <td class="dPessoa">${cpf}</td>
@@ -396,6 +405,7 @@ botaoInserirPessoa.addEventListener("click", ()=>{
     limparCamposFormulario()
     eventoBotaoExcluir()
     permitirEdicaoDados()
+    contagemCadastros()
   }
 
 })
@@ -405,3 +415,4 @@ campoPesquisa.addEventListener("keyup", pesquisarColaborador)
 renderizarCadastros(bancoDeCadastros)
 eventoBotaoExcluir()
 permitirEdicaoDados()
+contagemCadastros()
