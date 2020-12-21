@@ -1,0 +1,95 @@
+/*Root*/
+*{
+    font-family: Roboto;
+    font-size: 16px;
+    
+    margin: 0;
+    padding: 0;
+    
+    color: rgb(51, 51, 51);
+}
+
+/*Container principal*/
+#container{
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+}
+
+/*Campos do formulário*/
+#inserirDados div, input, button{
+    margin: 5px 0 5px 0;
+}
+
+#inserirDados #mensagem{
+    color: tomato;
+    transition: .3s;
+}
+
+#inserirDados input{
+    width: 120px;
+}
+
+#inserirDados button{
+    width: 50px;
+    height: 25px;
+
+    border: 0;
+    border-radius: 8px;
+    
+    font-weight: 500;
+
+    color: rgb(248, 248, 248);
+    background-color: rgb(38, 98, 230);
+
+    transition: .3s;
+}
+
+#inserirDados button:hover {
+    cursor: pointer;
+    background-color: rgb(51, 233, 111);
+    transition: .3s;
+}
+
+/*Tabela*/
+#cadastrosPessoa{
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#cadastrosPessoa tr{
+    transition: .2s;
+}
+
+#cadastrosPessoa tr:hover{
+    background-color: rgb(235, 235, 235);
+    transition: .2s;
+}
+
+#cadastrosPessoa th{
+    border: 0;
+    padding: 5px;
+    
+    background-color: rgb(38, 98, 230);
+    color: #ffffff;
+}
+
+#cadastrosPessoa td{
+    border-bottom: 1px solid  rgb(51, 233, 111);
+    font-weight: normal;
+
+    padding: 5px;
+}
+
+#cadastrosPessoa .material-icons{
+    cursor:pointer;
+    display: contents;
+    
+    transition: .3s;
+}
+
+#cadastrosPessoa .material-icons:hover{
+    color: tomato;
+    transition: .3s;
+}
