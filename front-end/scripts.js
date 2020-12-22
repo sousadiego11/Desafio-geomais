@@ -291,7 +291,7 @@ let eventoBotaoExcluir = ()=>{
 
 let renderizarCadastros = banco =>{
     
-  for (let i=0; i<bancoDeCadastros.length; i++){    
+  for (let i=0; i<banco.length; i++){    
       
       let novaTabela = `<tr class="registro" id="${banco[i].id}">  
                           <td>${banco[i].id}</td>
