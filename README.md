@@ -1,6 +1,6 @@
 # 🔎Tabela
 
-Esta aplicação front-end de calculadora foi criada utilizando HTML5, CSS3 e JavasCript.
+Uma aplicação interativa front-end usando HTML5, CSS3 e JavaScript.
 
 
 ## ⭐ Objetivo do projeto
